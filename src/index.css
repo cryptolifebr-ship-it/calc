@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base global */
+html, body, #root {
+  height: 100%;
+  background-color: #0b0b0b;
+  color: #e5e5e5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell;
+}
+
+/* Inputs padrão */
+input, select {
+  background-color: #121212;
+  border: 1px solid #2a2a2a;
+  color: #e5e5e5;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+/* Focus elegante */
+input:focus, select:focus {
+  outline: none;
+  border-color: #f59e0b; /* dourado */
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.4);
+}
